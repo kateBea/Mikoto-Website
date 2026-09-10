@@ -1,0 +1,96 @@
+site_name: Mikoto Engine
+site_description: A Vulkan-based C++20 game engine for learning modern graphics programming.
+site_url: https://katebea.github.io/Mikoto/
+repo_url: https://github.com/kateBea/Mikoto
+repo_name: kateBea/Mikoto
+edit_uri: edit/develop/docs/
+
+copyright: Copyright 2026 Kate Bea · Apache License 2.0
+
+theme:
+  name: material
+  language: en
+  font: false
+  favicon: https://raw.githubusercontent.com/kateBea/Mikoto/develop/Resources/Screenshots/img18.png
+  logo: null
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.action.edit
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Start here:
+      - Install & build: getting-started/build.md
+      - First look: getting-started/first-look.md
+  - Engine:
+      - Architecture: engine/architecture.md
+      - Rendering: engine/rendering.md
+      - World & assets: engine/world-and-assets.md
+      - Editor: engine/editor.md
+  - Workflows:
+      - Profiling: workflows/profiling.md
+      - Shaders with Slang: workflows/slang.md
+      - Networking: workflows/networking.md
+  - Reference:
+      - Platforms & requirements: reference/platforms.md
+      - Dependencies: reference/dependencies.md
+      - Repository map: reference/repository-map.md
+  - Project:
+      - Contributing: project/contributing.md
+      - License & thanks: project/license.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/kateBea/Mikoto
+      name: Mikoto on GitHub
